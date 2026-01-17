@@ -240,4 +240,5 @@ Dự án này được phân phối dưới giấy phép MIT. Xem file `LICENSE`
 
 Nếu bạn có câu hỏi hoặc góp ý, vui lòng liên hệ qua trang Liên hệ trong ứng dụng hoặc gửi email trực tiếp.
 #   E D U C A T I O N - K O T A R O - A I - 2  
+ #   E D U C A T I O N - K O T A R O - A I - 2  
  
