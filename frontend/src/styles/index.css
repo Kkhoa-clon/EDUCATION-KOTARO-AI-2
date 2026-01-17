@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;800&display=swap');
+
+:root {
+  /* Light Theme Colors */
+  --primary-light: #ffffff;
+  --secondary-light: #f8f9fa;
+  --accent-green: #22c55e;
+  --accent-green-hover: #16a34a;
+  --accent-blue: #059669;
+  --accent-teal: #10b981;
+
+  /* Text Colors */
+  --text-primary: #1f2937;
+  --text-secondary: rgba(31, 41, 55, 0.75);
+  --text-muted: rgba(31, 41, 55, 0.5);
+  --text-accent: #22c55e;
+
+  /* Overlays */
+  --overlay-light: rgba(0, 0, 0, 0.1);
+  --overlay-medium: rgba(0, 0, 0, 0.3);
+  --overlay-dark: rgba(255, 255, 255, 0.5);
+  --accent-overlay: rgba(34, 197, 94, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  background: var(--primary-light);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+
+
+/* Responsive Desktop Nav */
+@media (min-width: 768px) {
+  .desktop-nav {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .desktop-nav {
+    display: none !important;
+  }
+}
