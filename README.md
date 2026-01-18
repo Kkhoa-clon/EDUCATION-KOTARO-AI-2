@@ -1,7 +1,9 @@
 # EDUCATION KOTARO AI
 
 ## Mô tả dự án
-EDUCATION KOTARO AI là một nền tảng giáo dục toàn diện về khoa học và thiên văn học, được xây dựng bằng React (frontend) và Node.js (backend). Dự án cung cấp các tài liệu học tập, bài quiz, chatbot AI, và tích hợp với API NASA để khám phá vũ trụ. Đây là phiên bản cải tiến 2025 của dự án, với giao diện người dùng hiện đại và các tính năng học tập tương tác.
+EDUCATION KOTARO AI là một nền tảng giáo dục toàn diện về khoa học và thiên văn học, được xây dựng bằng React (frontend) và Node.js (backend). 
+Dự án cung cấp các tài liệu học tập, bài quiz, chatbot AI, và tích hợp với API NASA để khám phá vũ trụ. Đây là phiên bản cải 
+tiến 2025 của dự án, với giao diện người dùng hiện đại và các tính năng học tập tương tác.
 
 ## Tính năng chính
 
@@ -229,3 +231,4 @@ Chúng tôi hoan nghênh mọi đóng góp! Hãy làm theo các bước sau:
 - **v3.0.0 (2026)**: EDUCATION KOTARO AI BETTER - Phiên bản hiện tại với UI cải tiến
  
  
+
