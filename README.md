@@ -1,78 +1,78 @@
 # EDUCATION KOTARO AI
 
-## Project Description
-EDUCATION KOTARO AI is a comprehensive educational platform focused on science and astronomy, built with React (frontend) and Node.js (backend). The project provides learning materials, quizzes, AI chatbot, and NASA API integration to explore the universe. This is the improved 2025 version of the project, featuring a modern user interface and interactive learning features.
+## Mô tả dự án
+EDUCATION KOTARO AI là một nền tảng giáo dục toàn diện về khoa học và thiên văn học, được xây dựng bằng React (frontend) và Node.js (backend). Dự án cung cấp các tài liệu học tập, bài quiz, chatbot AI, và tích hợp với API NASA để khám phá vũ trụ. Đây là phiên bản cải tiến 2025 của dự án, với giao diện người dùng hiện đại và các tính năng học tập tương tác.
 
-## Key Features
+## Tính năng chính
 
-### 🏫 Learning Library
-- **Chemistry**: Materials and lectures on elements and chemical reactions
-- **Physics**: Basic and advanced physical concepts
-- **Biology**: Knowledge about organisms, cells, genetics
-- **Scientific Research**: Research methods and experiments
-- **HSG Exam Preparation**: Study materials for gifted students
+### 🏫 Thư viện học tập
+- **Hóa học**: Tài liệu và bài giảng về các nguyên tố, phản ứng hóa học
+- **Vật lý**: Các khái niệm vật lý cơ bản và nâng cao
+- **Sinh học**: Kiến thức về sinh vật, tế bào, di truyền
+- **Nghiên cứu khoa học**: Phương pháp nghiên cứu và thí nghiệm
+- **Ôn thi HSG**: Tài liệu ôn tập cho học sinh giỏi
 
-### 🌌 Astronomy
-- **Solar System**: Explore planets and satellites
-- **Earth**: Images and data about the blue planet
-- **Asteroids**: Information about the asteroid belt
-- **Other Planets**: Exoplanets and other star systems
-- **NASA Images**: Collection of astronomical images from NASA
-- **Mars Robots**: Information about Mars exploration missions
+### 🌌 Thiên văn học
+- **Hệ mặt trời**: Khám phá các hành tinh và vệ tinh
+- **Trái đất**: Hình ảnh và dữ liệu về hành tinh xanh
+- **Tiểu hành tinh**: Thông tin về vành đai tiểu hành tinh
+- **Hành tinh khác**: Các ngoại hành tinh và hệ sao khác
+- **Hình ảnh NASA**: Bộ sưu tập ảnh thiên văn từ NASA
+- **Robot Sao Hỏa**: Thông tin về các nhiệm vụ thám hiểm Sao Hỏa
 
-### 🤖 AI Chatbot
-- Intelligent AI assistant "Trợ lý Sen AI tỉnh Đồng Tháp"
-- Supports answering questions about science, math, physics, chemistry
-- Integrated with Ollama to run local AI models
-- Modern chat interface with markdown support
-- Supports copy, regenerate, and feedback for responses
+### 🤖 Chatbot AI
+- Trợ lý AI thông minh "Trợ lý Sen AI tỉnh Đồng Tháp"
+- Hỗ trợ trả lời câu hỏi về khoa học, toán học, vật lý, hóa học
+- Tích hợp với Ollama để chạy các model AI local
+- Giao diện chat hiện đại với markdown support
+- Hỗ trợ copy, regenerate và feedback cho câu trả lời
 
-### 📝 Quiz System
-- Integrated with OpenTDB API to fetch multiple-choice questions
-- Supports various topics: science, history, geography, entertainment, etc.
-- Difficulty levels: easy, medium, hard
-- Automatic translation of questions to Vietnamese
-- Interactive quiz interface with instant feedback
+### 📝 Hệ thống Quiz
+- Tích hợp với OpenTDB API để lấy câu hỏi trắc nghiệm
+- Hỗ trợ nhiều chủ đề: khoa học, lịch sử, địa lý, giải trí, v.v.
+- Các mức độ khó: dễ, trung bình, khó
+- Tự động dịch câu hỏi sang tiếng Việt
+- Giao diện quiz tương tác với feedback tức thời
 
-### 🧪 Virtual Laboratory
-- **Lab 2D**: 2D virtual laboratory
-- **VR/AR**: Virtual reality and augmented reality technology (iframe from separate project)
+### 🧪 Phòng thí nghiệm ảo
+- **Lab 2D**: Phòng thí nghiệm ảo 2 chiều
+- **VR/AR**: Công nghệ thực tế ảo và tăng cường (iframe từ dự án riêng)
 
-### 📧 Other Features
-- **Send Email**: Contact system with reCAPTCHA protection
-- **NASA API Integration**: Fetch rover data and images from NASA
-- **Responsive Design**: Compatible with all devices
+### 📧 Tính năng khác
+- **Gửi email**: Hệ thống liên hệ với reCAPTCHA protection
+- **Tích hợp NASA API**: Lấy dữ liệu rover và hình ảnh từ NASA
+- **Responsive design**: Tương thích với mọi thiết bị
 
-## Installation
+## Cài đặt
 
-### System Requirements
+### Yêu cầu hệ thống
 - Node.js >= 18.0.0
 - npm >= 9.0.0
-- (Optional) Ollama for local AI chatbot
+- (Tùy chọn) Ollama để chạy chatbot AI local
 
-### Installation Steps
-1. Clone the repository:
+### Các bước cài đặt
+1. Clone repository:
    ```bash
    git clone <repository-url>
    cd education-kotaro-ai-better
    ```
 
-2. Install dependencies for both frontend and backend:
+2. Cài đặt dependencies cho cả frontend và backend:
    ```bash
    npm run install:all
    ```
 
-3. Create `.env` file in the `backend` directory:
+3. Tạo file `.env` trong thư mục `backend`:
    ```env
-   # Email configuration (for email feature)
+   # Email configuration (cho tính năng gửi email)
    EMAIL_USER=your-email@gmail.com
    EMAIL_PASS=your-app-password
    CONTACT_EMAIL=contact@education-kotaro-ai.com
 
-   # NASA API (optional)
+   # NASA API (tùy chọn)
    NASA_API_KEY=your-nasa-api-key
 
-   # reCAPTCHA (optional)
+   # reCAPTCHA (tùy chọn)
    RECAPTCHA_SECRET=your-recaptcha-secret
 
    # Port configuration
@@ -80,22 +80,22 @@ EDUCATION KOTARO AI is a comprehensive educational platform focused on science a
    HOST=0.0.0.0
    ```
 
-4. (Optional) Install and run Ollama for chatbot:
+4. (Tùy chọn) Cài đặt và chạy Ollama cho chatbot:
    ```bash
-   # Download and install Ollama from https://ollama.ai
-   ollama pull qwen2.5-coder:7b  # or other model
+   # Download và cài đặt Ollama từ https://ollama.ai
+   ollama pull qwen2.5-coder:7b  # hoặc model khác
    ollama serve
    ```
 
-## Running the Project
+## Chạy dự án
 
-### Run in development mode
+### Chạy development mode
 ```bash
-# Run both frontend and backend simultaneously
+# Chạy cả frontend và backend cùng lúc
 npm run dev
 ```
 
-### Run separately
+### Chạy riêng từng phần
 ```bash
 # Backend only
 npm run dev:backend
@@ -104,40 +104,40 @@ npm run dev:backend
 npm run dev:frontend
 ```
 
-### Build for production
+### Build production
 ```bash
-# Build both frontend and backend
+# Build cả frontend và backend
 npm run build
 
-# Build separately
+# Build riêng
 npm run build:backend
 npm run build:frontend
 ```
 
-## Project Structure
+## Cấu trúc dự án
 
 ```
 education-kotaro-ai-better/
 ├── backend/                          # Backend Node.js
 │   ├── routes/
-│   │   ├── email.js                 # Email sending API
-│   │   ├── nasa.js                  # NASA API integration
-│   │   └── quiz.js                  # Quiz generation API
+│   │   ├── email.js                 # API gửi email
+│   │   ├── nasa.js                  # API NASA integration
+│   │   └── quiz.js                  # API tạo quiz
 │   ├── package.json
-│   └── server.js                    # Main server
+│   └── server.js                    # Server chính
 ├── frontend/                         # Frontend React
 │   ├── public/
 │   │   └── assets/                  # Static assets
 │   ├── src/
 │   │   ├── components/              # React components
-│   │   │   ├── Chatbot.tsx         # Chatbot component
+│   │   │   ├── Chatbot.tsx         # Component chatbot
 │   │   │   ├── Header.tsx          # Header component
 │   │   │   └── Footer.tsx          # Footer component
-│   │   ├── pages/                   # Pages
-│   │   │   ├── Home.tsx            # Home page
-│   │   │   ├── Quiz.tsx            # Quiz page
-│   │   │   ├── VR-AR.tsx           # VR/AR page
-│   │   │   └── ...                 # Other pages
+│   │   ├── pages/                   # Các trang
+│   │   │   ├── Home.tsx            # Trang chủ
+│   │   │   ├── Quiz.tsx            # Trang quiz
+│   │   │   ├── VR-AR.tsx           # Trang VR/AR
+│   │   │   └── ...                 # Các trang khác
 │   │   ├── services/
 │   │   │   └── api.ts              # API service layer
 │   │   ├── theme/                  # Material-UI theme
@@ -148,14 +148,14 @@ education-kotaro-ai-better/
 └── README.md
 ```
 
-## Technologies Used
+## Công nghệ sử dụng
 
 ### Frontend
-- **React 18**: JavaScript framework for UI
+- **React 18**: Framework JavaScript cho UI
 - **TypeScript**: Type-safe JavaScript
 - **Material-UI (MUI)**: Component library
 - **React Router**: Client-side routing
-- **Vite**: Build tool and dev server
+- **Vite**: Build tool và dev server
 - **Axios**: HTTP client
 - **React Markdown**: Render markdown
 - **React Syntax Highlighter**: Code highlighting
@@ -169,9 +169,9 @@ education-kotaro-ai-better/
 - **Dotenv**: Environment variables
 
 ### APIs & Services
-- **NASA API**: Astronomical data and images
-- **OpenTDB**: Trivia question database
-- **Google Translate API**: Question translation
+- **NASA API**: Dữ liệu thiên văn và hình ảnh
+- **OpenTDB**: Database câu hỏi trắc nghiệm
+- **Google Translate API**: Dịch câu hỏi
 - **Ollama**: Local AI model serving
 - **reCAPTCHA**: Spam protection
 
@@ -179,51 +179,51 @@ education-kotaro-ai-better/
 
 ### Backend APIs
 - `GET /health` - Health check
-- `POST /api/email/send` - Send contact email
-- `GET /api/nasa/rovers` - Get NASA rover list
-- `GET /api/nasa/photos` - Get images from rover
-- `POST /api/quiz/generate` - Generate quiz questions
+- `POST /api/email/send` - Gửi email liên hệ
+- `GET /api/nasa/rovers` - Lấy danh sách rover NASA
+- `GET /api/nasa/photos` - Lấy hình ảnh từ rover
+- `POST /api/quiz/generate` - Tạo câu hỏi quiz
 
 ### Frontend Routes
-- `/` - Home
-- `/chatbot` - AI Chatbot
-- `/thu-vien/*` - Learning Library
-- `/thien-van/*` - Astronomy
-- `/quiz` - Quiz
-- `/lab/lab2d` - 2D Laboratory
-- `/vr-ar` - VR/AR Experience
-- `/lien-he` - Contact
+- `/` - Trang chủ
+- `/chatbot` - Chatbot AI
+- `/thu-vien/*` - Thư viện học tập
+- `/thien-van/*` - Thiên văn học
+- `/quiz` - Bài kiểm tra
+- `/lab/lab2d` - Phòng thí nghiệm 2D
+- `/vr-ar` - VR/AR experience
+- `/lien-he` - Liên hệ
 
-## Contributing
+## Đóng góp
 
-We welcome all contributions! Please follow these steps:
+Chúng tôi hoan nghênh mọi đóng góp! Hãy làm theo các bước sau:
 
-1. Fork the project
-2. Create a new branch: `git checkout -b feature/AmazingFeature`
+1. Fork dự án
+2. Tạo branch mới: `git checkout -b feature/AmazingFeature`
 3. Commit changes: `git commit -m 'Add some AmazingFeature'`
 4. Push to branch: `git push origin feature/AmazingFeature`
-5. Create a Pull Request
+5. Tạo Pull Request
 
-### Contribution Rules
-- Follow the current code style
-- Write clear commit messages
-- Test thoroughly before submitting PR
-- Update documentation if needed
+### Quy tắc đóng góp
+- Tuân thủ code style hiện tại
+- Viết commit messages rõ ràng
+- Test kỹ trước khi submit PR
+- Cập nhật documentation nếu cần
 
-## Development Team
+## Đội ngũ phát triển
 
 ### Đỗ Nguyễn Đăng Khoa
-- **Role**: Front End Developer
-- **School**: THPT Long Khanh A, Đồng Tháp
-- **Skills**: HTML, CSS, JavaScript, React, Node.js, TypeScript, C++, Python
+- **Vai trò**: Front End Developer
+- **Trường**: THPT Long Khanh A, Đồng Tháp
+- **Kỹ năng**: HTML, CSS, JavaScript, React, Node.js, TypeScript, C++, Python
 
 ### Nguyễn Văng Ngọc Tiến
-- **Role**: Back End Developer
-- **School**: THPT Long Khanh A, Đồng Tháp
-- **Skills**: HTML, CSS, JavaScript, React, Node.js, TypeScript, C++, Python
+- **Vai trò**: Back End Developer
+- **Trường**: THPT Long Khanh A, Đồng Tháp
+- **Kỹ năng**: HTML, CSS, JavaScript, React, Node.js, TypeScript, C++, Python
 
-## Version History
+## Lịch sử phiên bản
 
-- **v1.0.0 (2024)**: Initial version - Natural Science Website
-- **v2.0.0 (2025)**: EDUCATION KOTARO AI - Added chatbot and NASA integration
-- **v3.0.0 (2026)**: EDUCATION KOTARO AI BETTER - Current version with improved UI
+- **v1.0.0 (2024)**: Phiên bản đầu tiên - Website Khoa Học Tự Nhiên
+- **v2.0.0 (2025)**: EDUCATION KOTARO AI - Thêm chatbot và NASA integration
+- **v3.0.0 (2026)**: EDUCATION KOTARO AI BETTER - Phiên bản hiện tại với UI cải tiến
