@@ -541,7 +541,7 @@ const ChatbotComponent = () => {
                       sx={{
                         p: 2.5,
                         bgcolor: msg.sender === 'user'
-                          ? 'linear-gradient(135deg, #16a34a 0%, #22c55e 100%)'
+                          ? '#16a34a'
                           : 'background.paper',
                         color: msg.sender === 'user' ? 'white' : 'text.primary',
                         position: 'relative',
