@@ -227,18 +227,5 @@ Chúng tôi hoan nghênh mọi đóng góp! Hãy làm theo các bước sau:
 - **v1.0.0 (2024)**: Phiên bản đầu tiên - Website Khoa Học Tự Nhiên
 - **v2.0.0 (2025)**: EDUCATION KOTARO AI - Thêm chatbot và NASA integration
 - **v3.0.0 (2026)**: EDUCATION KOTARO AI BETTER - Phiên bản hiện tại với UI cải tiến
-
-## Giấy phép
-
-Dự án này được phân phối dưới giấy phép MIT. Xem file `LICENSE` để biết thêm chi tiết.
-
-## Liên hệ
-
-- **Website**: https://education-kotaro-ai-better.netlify.app
-- **Email**: contact@education-kotaro-ai.com
-- **GitHub**: [education-kotaro-ai-better](https://github.com/username/education-kotaro-ai-better)
-
-Nếu bạn có câu hỏi hoặc góp ý, vui lòng liên hệ qua trang Liên hệ trong ứng dụng hoặc gửi email trực tiếp.
-#   E D U C A T I O N - K O T A R O - A I - 2  
- #   E D U C A T I O N - K O T A R O - A I - 2  
+ 
  
