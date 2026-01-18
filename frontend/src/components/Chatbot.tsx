@@ -406,9 +406,30 @@ const ChatbotComponent = () => {
                 <SmartToyIcon />
               </Avatar>
               <Box>
-                <Typography variant="h6" fontWeight={600} sx={{ color: '#16a34a' }}>
-                  Trợ lý Sen AI
-                </Typography>
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                  <Typography variant="h6" fontWeight={600} sx={{ color: '#16a34a' }}>
+                    Trợ lý Sen AI
+                  </Typography>
+                  <Box
+                    sx={{
+                      width: 8,
+                      height: 8,
+                      borderRadius: '50%',
+                      bgcolor: '#00bfff',
+                      animation: 'pulse 2s infinite',
+                      '@keyframes pulse': {
+                        '0%, 100%': {
+                          opacity: 1,
+                          transform: 'scale(1)',
+                        },
+                        '50%': {
+                          opacity: 0.5,
+                          transform: 'scale(0.8)',
+                        },
+                      },
+                    }}
+                  />
+                </Box>
                 <Typography variant="caption" color="text.secondary" sx={{ fontWeight: 500 }}>
                   Trợ lý AI tỉnh Đồng Tháp
                 </Typography>
@@ -435,9 +456,18 @@ const ChatbotComponent = () => {
               <Chip
                 icon={<SettingsIcon />}
                 label={isTyping ? 'Đang trả lời...' : 'Sẵn sàng'}
-                color={isTyping ? 'warning' : 'success'}
+                color={isTyping ? 'warning' : 'primary'}
                 variant="outlined"
                 size="small"
+                sx={{
+                  '&.MuiChip-colorPrimary': {
+                    borderColor: '#00bfff',
+                    color: '#00bfff',
+                    '& .MuiChip-icon': {
+                      color: '#00bfff',
+                    },
+                  },
+                }}
               />
             </Box>
           </Box>
@@ -696,6 +726,114 @@ const ChatbotComponent = () => {
                 </Box>
               </Box>
             ))}
+            
+            {isTyping && (
+              <Box
+                sx={{
+                  display: 'flex',
+                  gap: 2,
+                  alignItems: 'flex-start',
+                  animation: 'slideIn 0.3s ease-out',
+                  '@keyframes slideIn': {
+                    '0%': {
+                      opacity: 0,
+                      transform: 'translateX(-20px)',
+                    },
+                    '100%': {
+                      opacity: 1,
+                      transform: 'translateX(0)',
+                    },
+                  },
+                }}
+              >
+                <Avatar 
+                  sx={{ 
+                    bgcolor: 'linear-gradient(135deg, #22c55e 0%, #4ade80 100%)',
+                    width: 40,
+                    height: 40,
+                    border: '2px solid',
+                    borderColor: alpha('#22c55e', 0.2),
+                    boxShadow: '0 4px 12px rgba(34, 197, 94, 0.2)',
+                  }} 
+                  src="/assets/icon/besen.webp"
+                >
+                  <SmartToyIcon sx={{ fontSize: 20 }} />
+                </Avatar>
+                <Paper
+                  sx={{
+                    p: 2.5,
+                    bgcolor: 'background.paper',
+                    position: 'relative',
+                    borderRadius: 1.5,
+                    boxShadow: '0 4px 16px rgba(0, 0, 0, 0.08)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 0.5,
+                  }}
+                >
+                  <Box
+                    sx={{
+                      width: 6,
+                      height: 6,
+                      borderRadius: '50%',
+                      bgcolor: '#22c55e',
+                      animation: 'typingDot1 1.4s infinite ease-in-out',
+                      '@keyframes typingDot1': {
+                        '0%, 60%, 100%': {
+                          transform: 'translateY(0)',
+                          opacity: 0.4,
+                        },
+                        '30%': {
+                          transform: 'translateY(-10px)',
+                          opacity: 1,
+                        },
+                      },
+                    }}
+                  />
+                  <Box
+                    sx={{
+                      width: 6,
+                      height: 6,
+                      borderRadius: '50%',
+                      bgcolor: '#22c55e',
+                      animation: 'typingDot2 1.4s infinite ease-in-out',
+                      animationDelay: '0.2s',
+                      '@keyframes typingDot2': {
+                        '0%, 60%, 100%': {
+                          transform: 'translateY(0)',
+                          opacity: 0.4,
+                        },
+                        '30%': {
+                          transform: 'translateY(-10px)',
+                          opacity: 1,
+                        },
+                      },
+                    }}
+                  />
+                  <Box
+                    sx={{
+                      width: 6,
+                      height: 6,
+                      borderRadius: '50%',
+                      bgcolor: '#22c55e',
+                      animation: 'typingDot3 1.4s infinite ease-in-out',
+                      animationDelay: '0.4s',
+                      '@keyframes typingDot3': {
+                        '0%, 60%, 100%': {
+                          transform: 'translateY(0)',
+                          opacity: 0.4,
+                        },
+                        '30%': {
+                          transform: 'translateY(-10px)',
+                          opacity: 1,
+                        },
+                      },
+                    }}
+                  />
+                </Paper>
+              </Box>
+            )}
+            
             <div ref={messagesEndRef} />
           </Box>
 
