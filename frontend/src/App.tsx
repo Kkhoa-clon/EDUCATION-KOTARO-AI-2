@@ -29,6 +29,9 @@ import RobotSaoHoaPage from './pages/RobotSaoHoaPage'
 // Lab pages
 import Lab2DPage from './pages/Lab2DPage'
 
+// VR pages
+import VRAR from './pages/VR-AR'
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -75,6 +78,9 @@ function App() {
 
               {/* Lab routes */}
               <Route path="/lab/lab2d" element={<Lab2DPage />} />
+
+              {/* VR routes */}
+              <Route path="/vr-ar" element={<VRAR />} />
 
               {/* Other routes */}
               <Route path="/quiz" element={<Quiz />} />
